@@ -11,7 +11,7 @@
     </parent>
     
     <groupId>com.chaklader.microservices</groupId>
-    <artifactId>LimitService</artifactId>
+    <artifactId>limit-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>LimitService</name>
     <description>Demo project for Spring Boot</description>

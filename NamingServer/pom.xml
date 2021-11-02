@@ -11,7 +11,7 @@
 	</parent>
 	
 	<groupId>com.chaklader.microservices</groupId>
-	<artifactId>NamingServer</artifactId>
+	<artifactId>naming-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>NamingServer</name>
 	<description>Naming Server</description>

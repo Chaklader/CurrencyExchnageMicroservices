@@ -12,7 +12,7 @@
     </parent>
     
     <groupId>com.chaklader.microservices</groupId>
-    <artifactId>CurrencyConversionService</artifactId>
+    <artifactId>currency-conversion-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>CurrencyConversionService</name>
     <description>Currency Conversion Service</description>
@@ -49,21 +49,21 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
-        
+    
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-sleuth</artifactId>
         </dependency>
-        
+    
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-sleuth-zipkin</artifactId>
         </dependency>
-        
-        <!--        <dependency>-->
-        <!--            <groupId>org.springframework.amqp</groupId>-->
-        <!--            <artifactId>spring-rabbit</artifactId>-->
-        <!--        </dependency>-->
+    
+        <dependency>
+            <groupId>org.springframework.amqp</groupId>
+            <artifactId>spring-rabbit</artifactId>
+        </dependency>
         
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -98,6 +98,12 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <image>
+                        <name>chaklader/mmv2-${project.artifactId}:${project.version}</name>
+                    </image>
+                    <pullPolicy>IF_NOT_PRESENT</pullPolicy>
+                </configuration>
             </plugin>
         </plugins>
     </build>
