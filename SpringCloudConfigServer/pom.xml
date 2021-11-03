@@ -21,7 +21,9 @@
 		<spring-cloud.version>2020.0.4</spring-cloud.version>
 	</properties>
 	
+	
 	<dependencies>
+		
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-config-server</artifactId>
@@ -54,14 +56,22 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
+	
+	
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<image>
+						<name>chaklader/mmv2-${project.artifactId}:${project.version}</name>
+					</image>
+					<pullPolicy>IF_NOT_PRESENT</pullPolicy>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+
 
 </project>
