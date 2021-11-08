@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "eureka.renewalPercentThreshold",
+      "type": "java.lang.String",
+      "description": "Description for eureka.renewalPercentThreshold."
+  }
+] }
