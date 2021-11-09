@@ -63,7 +63,7 @@ figure: RABBITMQ Server
 
 CLINENT REQUESTS
 
-// 017-555-139-06
+
 
 a. API GATEWAY
 
@@ -103,3 +103,12 @@ Typical features:
 - Load Balancer 
 - Self Healing
 - Zero Downtime Deployments 
+
+<br>
+<br>
+<br>
+
+# CONTAINER ORCHESTRATION WITH GOOGLE KUBERNETES ENGINE  (GKE)
+
+<br>
+<br>
