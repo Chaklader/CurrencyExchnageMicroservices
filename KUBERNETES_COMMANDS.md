@@ -1,6 +1,13 @@
-# Docker
+# DOCKER
 
-## Images
+<br>
+<br>
+
+## IMAGES
+
+<br>
+<br>
+
 
 You can reuse these images instead of creating and pushing new container images
 
@@ -22,9 +29,13 @@ You can reuse these images instead of creating and pushing new container images
 - http://localhost:8100/currency-conversion-feign/from/USD/to/INR/quantity/10
 
 
-#### Commands
-```
+#### COMMANDS
 
+<br>
+<br>
+<br>
+
+```
 docker run -p 8080:8080 in28min/hello-world-rest-api:0.0.1.RELEASE
 
 kubectl create deployment hello-world-rest-api --image=in28min/hello-world-rest-api:0.0.1.RELEASE
@@ -86,9 +97,23 @@ gcloud container clusters get-credentials in28minutes-cluster --zone us-central1
 docker login
 docker push in28min/mmv2-currency-exchange-service:0.0.11-SNAPSHOT
 docker push in28min/mmv2-currency-conversion-service:0.0.11-SNAPSHOT
+```
 
-kubectl create deployment currency-exchange --image=in28min/mmv2-currency-exchange-service:0.0.11-SNAPSHOT
+
+<br>
+<br>
+
+### KUBERNETES DEPLOYMENTS 
+
+<br>
+
+
+
+```
+
+kubectl create deployment currency-exchange --image=chaklader/mmv2-currency-exchange-service:0.0.11-SNAPSHOT
 kubectl expose deployment currency-exchange --type=LoadBalancer --port=8000
+
 kubectl get svc
 kubectl get services
 kubectl get pods
@@ -97,7 +122,7 @@ kubectl get replicaset
 kubectl get rs
 kubectl get all
 
-kubectl create deployment currency-conversion --image=in28min/mmv2-currency-conversion-service:0.0.11-SNAPSHOT
+kubectl create deployment currency-conversion --image=chaklader/mmv2-currency-conversion-service:0.0.11-SNAPSHOT
 kubectl expose deployment currency-conversion --type=LoadBalancer --port=8100
 
 kubectl get svc --watch
@@ -137,4 +162,23 @@ watch -n 0.1 curl http://34.66.241.150:8100/currency-conversion-feign/from/USD/t
 
 docker push in28min/mmv2-currency-conversion-service:0.0.12-SNAPSHOT
 docker push in28min/mmv2-currency-exchange-service:0.0.12-SNAPSHOT
+
+
+kubectl rollout history deployment  currency-conversion
+kubectl rollout history deployment  currency-exchange
+
+kubectl rollout undo deployment  currency-exchange --to-revision=1
+
+kubectl logs -f POD_NAME
+
+kubectl scale deployment currency-exchange --replicas=2
+
+kubectl autoscale deployment currency-exchange --min=3  --max=5 --cpu-percent=80
+
+kubectl get hpa
+kubectl get po --watch
+
+kubectl top pod
+kubectl top nodes
+
 ```

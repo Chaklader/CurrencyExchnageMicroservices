@@ -23,17 +23,9 @@ spec:
         app: currency-exchange
     spec:
       containers:
-      - image: chaklader/mmv2-currency-exchange-service:0.0.12-SNAPSHOT
+      - image: chaklader/mmv2-currency-exchange-service:0.0.11-SNAPSHOT
         imagePullPolicy: IfNotPresent
         name: mmv2-currency-exchange-service
-        readinessProbe:
-          httpGet:
-            port: 8000
-            path: /actuator/health/readiness
-        livenessProbe:
-          httpGet:
-            port: 8000
-            path: /actuator/health/liveness
       restartPolicy: Always
 ---
 apiVersion: v1

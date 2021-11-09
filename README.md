@@ -75,13 +75,13 @@ a. API GATEWAY
 
 b. 
     http://localhost:8000/currency-exchange/from/AUD/to/BDT
-    http://35.231.202.202:8000/currency-exchange/from/AUD/to/INR
+    http://35.231.202.202:8000/currency-exchange-feign/from/AUD/to/INR
 
 c.     
     http://localhost:8100/currency-conversion/from/USD/to/BDT/quantity/100
     
-    http://localhost:8100/currency-conversion-feign/from/USD/to/BDT/quantity/100
-    http://34.134.215.70:8100/currency-conversion-feign/from/USD/to/BDT/quantity/100
+    http://35.196.139.219:8100/currency-conversion-feign/from/USD/to/INR/quantity/100
+    http://35.196.139.219:8100/currency-conversion-feign/from/USD/to/INR/quantity/100
 
 
 <br>
@@ -132,32 +132,34 @@ Typical features:
 <br>
 <br>
 
-## GOOGLE KUBERNETES ENGINE  (GKE)
+### GOOGLE KUBERNETES ENGINE  (GKE)
+
+
+
+
+
+
 
 <br>
-<br>
-<br>
-
 <img src="images/CLUSTER_CREATION.png" alt="Italian Trulli">
-
-<br>
-<br>
-<br>
-
-<br>
+figure: horizontal deployment architecture
 <br>
 <br>
 
+<br>
+<img src="images/SERVICES.png" alt="Italian Trulli">
+figure: list of the services
+<br>
+<br>
+
+<br>
 <img src="images/CURRENCY_EXCHANGE.png" alt="Italian Trulli">
 figure: Currency exchange service dashboard
 <br>
 <br>
-<br>
+
 
 <br>
-<br>
-<br>
-
 <img src="images/CURRENCY_CONVERSION.png" alt="Italian Trulli">
 figure: Currency conversion service dashboard
 <br>
