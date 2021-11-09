@@ -63,6 +63,7 @@ figure: RABBITMQ Server
 
 CLINENT REQUESTS
 
+// 017-555-139-06
 
 a. API GATEWAY
 
@@ -74,9 +75,12 @@ a. API GATEWAY
 
 b. 
     http://localhost:8000/currency-exchange/from/AUD/to/BDT
+    http://35.231.183.197:8000/currency-exchange/from/AUD/to/BDT
 
 c.     
     http://localhost:8100/currency-conversion/from/USD/to/BDT/quantity/100
+    http://localhost:8100/currency-conversion-feign/from/USD/to/BDT/quantity/100
+    http://34.134.215.70:8100/currency-conversion-feign/from/USD/to/BDT/quantity/100
 
 
 
