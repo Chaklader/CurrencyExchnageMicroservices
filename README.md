@@ -83,8 +83,26 @@ c.
     http://34.134.215.70:8100/currency-conversion-feign/from/USD/to/BDT/quantity/100
 
 
+<br>
+<br>
+<br>
 
-RUN
+# DOCKER CONTAINERS EXECUTION
+
+<br>
+<br>
+
+<br>
+<br>
+
+## RUN WITH THE COMMANDS 
+
+<br>
+<br>
+
+The follwing commands with create the docker imaages and run all the required micro-services - 
+
+<br>
 
 
     $ ./create_docker_images.sh
@@ -92,9 +110,14 @@ RUN
 
 
 
+<br>
+<br>
+<br>
 
-Container Orchestration
-
+# CONTAINER ORCHESTRATION WITH KUBERNETES 
+<br>
+<br>
+<br>
 
 Typical features:
 
@@ -108,7 +131,14 @@ Typical features:
 <br>
 <br>
 
-# CONTAINER ORCHESTRATION WITH GOOGLE KUBERNETES ENGINE  (GKE)
+## GOOGLE KUBERNETES ENGINE  (GKE)
 
+<br>
+<br>
+<br>
+
+<img src="images/CLUSTER_CREATION.png" alt="Italian Trulli">
+
+<br>
 <br>
 <br>
