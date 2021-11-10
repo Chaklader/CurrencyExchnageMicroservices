@@ -134,8 +134,19 @@ Typical features:
 
 ### GOOGLE KUBERNETES ENGINE  (GKE)
 
+<br>
+Enter in the microservice namely `<currency-exchange-service>` and `<currency-conversion-service>` and deploy uisng the commands:
 
+<br>
 
+```
+kubectl apply -f deployment.yaml
+```
+<br>
+
+The `deployment.yaml` contains all the info about the deployment, service and config map. 
+
+<br>
 
 
 
